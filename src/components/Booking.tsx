@@ -22,12 +22,12 @@ export default function Booking() {
   return (
     <section
       id="book"
-      className="relative overflow-hidden bg-gradient-to-br from-slate-950 via-cyan-950 to-slate-900 py-24"
+      className="relative overflow-hidden bg-gradient-to-br from-[#07131f] via-[#0f4c81] to-[#0d1b2a] py-24"
     >
       {/* Background Glow */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-20 -left-20 h-96 w-96 rounded-full bg-cyan-500/20 blur-[140px]" />
-        <div className="absolute bottom-0 right-0 h-[500px] w-[500px] rounded-full bg-blue-500/20 blur-[180px]" />
+        <div className="absolute -top-20 -left-20 h-96 w-96 rounded-full bg-[#38bdf8]/20 blur-[140px]" />
+        <div className="absolute bottom-0 right-0 h-[500px] w-[500px] rounded-full bg-[#0f4c81]/30 blur-[180px]" />
       </div>
 
       <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-10">
@@ -44,7 +44,7 @@ export default function Booking() {
 
             <div className="p-10 lg:p-16">
 
-              <span className="rounded-full bg-cyan-500/20 px-5 py-2 text-xs font-semibold uppercase tracking-[0.35em] text-cyan-300">
+              <span className="rounded-full bg-[#0f4c81]/30 px-5 py-2 text-xs font-semibold uppercase tracking-[0.35em] text-[#67e8f9]">
                 FOR TRAVELERS & PROPERTY OWNERS
               </span>
 
@@ -54,7 +54,7 @@ export default function Booking() {
                 Host Smarter.
               </h2>
 
-              <p className="mt-8 text-lg leading-8 text-slate-300">
+              <p className="mt-8 text-lg leading-8 text-white/80">
                 Whether you're planning your dream vacation or you own a resort,
                 villa, homestay, farm stay, estate stay or beach property,
                 Waves & Mist helps connect travelers with unforgettable stays
@@ -65,10 +65,10 @@ export default function Booking() {
 
                 <div className="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 p-5">
 
-                  <Phone className="text-cyan-400" size={28} />
+                  <Phone className="text-[#38bdf8]" size={28} />
 
                   <div>
-                    <p className="text-sm text-slate-400">
+                    <p className="text-sm text-white/70">
                       Call / WhatsApp
                     </p>
 
@@ -82,10 +82,10 @@ export default function Booking() {
 
                 <div className="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 p-5">
 
-                  <MapPin className="text-cyan-400" size={28} />
+                  <MapPin className="text-[#38bdf8]" size={28} />
 
                   <div>
-                    <p className="text-sm text-slate-400">
+                    <p className="text-sm text-white/70">
                       Serving
                     </p>
 
@@ -99,10 +99,10 @@ export default function Booking() {
 
                 <div className="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 p-5">
 
-                  <Clock className="text-cyan-400" size={28} />
+                  <Clock className="text-[#38bdf8]" size={28} />
 
                   <div>
-                    <p className="text-sm text-slate-400">
+                    <p className="text-sm text-white/70">
                       Customer Support
                     </p>
 
@@ -125,22 +125,22 @@ export default function Booking() {
                 <div className="grid grid-cols-2 gap-4">
 
                   <div className="rounded-xl bg-white/10 p-5 text-white">
-                    <Hotel className="mb-3 text-cyan-400" />
+                    <Hotel className="mb-3 text-[#38bdf8]" />
                     Resorts
                   </div>
 
                   <div className="rounded-xl bg-white/10 p-5 text-white">
-                    <Home className="mb-3 text-cyan-400" />
+                    <Home className="mb-3 text-[#38bdf8]" />
                     Villas
                   </div>
 
                   <div className="rounded-xl bg-white/10 p-5 text-white">
-                    <Mountain className="mb-3 text-cyan-400" />
+                    <Mountain className="mb-3 text-[#38bdf8]" />
                     Mountain Stays
                   </div>
 
                   <div className="rounded-xl bg-white/10 p-5 text-white">
-                    <Trees className="mb-3 text-cyan-400" />
+                    <Trees className="mb-3 text-[#38bdf8]" />
                     Farm & Estate Stays
                   </div>
 
@@ -148,19 +148,20 @@ export default function Booking() {
               </div>
 
             </div>
-                        {/* RIGHT SIDE */}
 
-            <div className="bg-white p-10 lg:p-16">
+            {/* RIGHT SIDE */}
 
-              <span className="rounded-full bg-cyan-100 px-5 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-cyan-700">
+            <div className="bg-[#0f4c81] p-10 lg:p-16">
+
+              <span className="rounded-full bg-white/15 px-5 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-white">
                 CONNECT WITH US
               </span>
 
-              <h3 className="mt-6 text-4xl font-bold text-slate-900">
+              <h3 className="mt-6 text-4xl font-bold text-white">
                 Travelers & Property Owners
               </h3>
 
-              <p className="mt-6 leading-8 text-slate-600">
+              <p className="mt-6 leading-8 text-white/80">
                 Looking for the perfect holiday destination?
                 <br />
                 Or do you own a resort, villa, homestay, estate stay, farm stay
@@ -171,28 +172,28 @@ export default function Booking() {
 
               <div className="mt-10 space-y-4">
 
-                <div className="rounded-2xl bg-slate-100 p-5 transition hover:bg-cyan-50">
-                  🏨  <h4 className="font-semibold text-black">Resort Listing</h4>
+                <div className="rounded-2xl bg-white/10 p-5 transition hover:bg-white/20">
+                  🏨  <h4 className="font-semibold text-white">Resort Listing</h4>
                 </div>
 
-                <div className="rounded-2xl bg-slate-100 p-5 transition hover:bg-cyan-50">
-                  🏖️  <h4 className="font-semibold text-black">Beach Villa Listing</h4>
+                <div className="rounded-2xl bg-white/10 p-5 transition hover:bg-white/20">
+                  🏖️  <h4 className="font-semibold text-white">Beach Villa Listing</h4>
                 </div>
 
-                <div className="rounded-2xl bg-slate-100 p-5 transition hover:bg-cyan-50">
-                  🏡  <h4 className="font-semibold text-black">Homestay Listing</h4>
+                <div className="rounded-2xl bg-white/10 p-5 transition hover:bg-white/20">
+                  🏡  <h4 className="font-semibold text-white">Homestay Listing</h4>
                 </div>
 
-                <div className="rounded-2xl bg-slate-100 p-5 transition hover:bg-cyan-50">
-                  🌿  <h4 className="font-semibold text-black">Estate & Farm Stay Listing</h4>
+                <div className="rounded-2xl bg-white/10 p-5 transition hover:bg-white/20">
+                  🌿  <h4 className="font-semibold text-white">Estate & Farm Stay Listing</h4>
                 </div>
 
-                <div className="rounded-2xl bg-slate-100 p-5 transition hover:bg-cyan-50">
-                  ⛰️  <h4 className="font-semibold text-black">Mountain Stay Listing</h4>
+                <div className="rounded-2xl bg-white/10 p-5 transition hover:bg-white/20">
+                  ⛰️  <h4 className="font-semibold text-white">Mountain Stay Listing</h4>
                 </div>
 
-                <div className="rounded-2xl bg-slate-100 p-5 transition hover:bg-cyan-50">
-                  📈  <h4 className="font-semibold text-black">Free Promotion & Booking Support</h4>
+                <div className="rounded-2xl bg-white/10 p-5 transition hover:bg-white/20">
+                  📈  <h4 className="font-semibold text-white">Free Promotion & Booking Support</h4>
                 </div>
 
               </div>
@@ -206,13 +207,13 @@ I would like to book a stay.
 
 Please share:
 
-• Available Properties
-• Best Packages
-• Prices
-• Photos
+- Available Properties
+- Best Packages
+- Prices
+- Photos
 
 Thank you.`}
-                  className="w-full justify-center !bg-cyan-600 hover:!bg-cyan-700 !text-white !py-4 text-base"
+                  className="w-full justify-center !bg-[#06b6d4] hover:!bg-[#0891b2] !text-white !py-4 text-base"
                 >
                   Book Your Stay
                 </WhatsAppButton>
@@ -228,10 +229,10 @@ Location:
 
 Please share:
 
-• Listing Process
-• Commission Details
-• Required Documents
-• Promotion Options
+- Listing Process
+- Commission Details
+- Required Documents
+- Promotion Options
 
 Thank you.`}
                   className="w-full justify-center !bg-green-600 hover:!bg-green-700 !text-white !py-4 text-base"
@@ -241,7 +242,7 @@ Thank you.`}
 
               </div>
 
-              <div className="mt-10 rounded-3xl bg-gradient-to-r from-cyan-600 to-blue-600 p-8 text-white">
+              <div className="mt-10 rounded-3xl bg-gradient-to-r from-[#0f4c81] to-[#06b6d4] p-8 text-white border border-white/10">
 
                 <h4 className="text-2xl font-bold">
                   Why Join Waves & Mist?

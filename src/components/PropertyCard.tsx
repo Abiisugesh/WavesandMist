@@ -55,7 +55,7 @@ className="group cursor-pointer overflow-hidden rounded-[30px] bg-white shadow-x
         <span
           className={`absolute left-5 top-5 rounded-full px-4 py-2 text-xs font-semibold uppercase tracking-wider backdrop-blur-md ${
             property.type === "Resort"
-              ? "bg-cyan-500 text-white"
+              ? "bg-[#0f4c81] text-white"
               : "bg-emerald-600 text-white"
           }`}
         >
@@ -78,11 +78,11 @@ className="group cursor-pointer overflow-hidden rounded-[30px] bg-white shadow-x
   onClick={(e) => e.stopPropagation()}
   className="absolute bottom-5 left-5 rounded-xl bg-white/90 px-4 py-2 backdrop-blur"
 >
-          <p className="text-xs uppercase tracking-widest text-slate-500">
+          <p className="text-xs uppercase tracking-widest text-[#64748b]">
             Starting From
           </p>
 
-          <h4 className="font-bold text-cyan-700">
+          <h4 className="font-bold text-[#0f4c81]">
             {property.price}
           </h4>
 
@@ -96,7 +96,7 @@ className="group cursor-pointer overflow-hidden rounded-[30px] bg-white shadow-x
 
         {/* Location */}
 
-        <div className="flex items-center gap-2 text-sm text-slate-500">
+        <div className="flex items-center gap-2 text-sm text-[#64748b]">
 
           <MapPin size={16} />
 
@@ -106,7 +106,7 @@ className="group cursor-pointer overflow-hidden rounded-[30px] bg-white shadow-x
 
         {/* Title */}
 
-        <h3 className="font-display text-2xl font-bold text-slate-900">
+        <h3 className="font-display text-2xl font-bold text-[#0d1b2a]">
 
           {property.name}
 
@@ -117,11 +117,11 @@ className="group cursor-pointer overflow-hidden rounded-[30px] bg-white shadow-x
        <div className="mt-6 flex items-center justify-between border-t border-slate-200 pt-5">
 
   <div>
-    <p className="text-xs uppercase tracking-widest text-slate-400">
+    <p className="text-xs uppercase tracking-widest text-[#94a3b8]">
       Starting From
     </p>
 
-    <h4 className="text-2xl font-bold text-cyan-600">
+    <h4 className="text-2xl font-bold text-[#06b6d4]">
       {property.price}
     </h4>
   </div>
@@ -131,7 +131,7 @@ className="group cursor-pointer overflow-hidden rounded-[30px] bg-white shadow-x
       e.stopPropagation();
       setOpen(true);
     }}
-    className="rounded-full bg-cyan-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-cyan-700"
+    className="rounded-full bg-[#0f4c81] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#0891b2]"
   >
     View Details
   </button>
@@ -239,11 +239,11 @@ I'm interested in booking:
 
 Please share:
 
-• Availability
-• Photos
-• Amenities
-• Best Price
-• Booking Process
+- Availability
+- Photos
+- Amenities
+- Best Price
+- Booking Process
 
 Thank you.`}
             className="!bg-cyan-600 hover:!bg-cyan-700 !text-white !px-6 !py-3"

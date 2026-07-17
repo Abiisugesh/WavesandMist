@@ -17,7 +17,7 @@ export default function Footer() {
   )} ${WHATSAPP_NUMBER.slice(2, 7)} ${WHATSAPP_NUMBER.slice(7)}`;
 
   return (
-    <footer className="bg-slate-950 text-slate-300">
+    <footer className="bg-[#123f66] text-white">
 
       <div className="mx-auto max-w-7xl px-6 py-20">
 
@@ -31,7 +31,7 @@ export default function Footer() {
               Waves & Mist
             </h2>
 
-            <p className="mt-4 leading-7 text-slate-400">
+            <p className="mt-4 leading-7 text-white/80">
               Discover the best Resorts, Villas, Homestays,
               Farm Stays, Estate Stays, Adventure Tours,
               Beaches and Waterfalls across
@@ -48,17 +48,17 @@ export default function Footer() {
               Quick Links
             </h3>
 
-            <ul className="space-y-3">
+            <ul className="space-y-3 text-white/85">
 
-              <li><a href="#home" className="hover:text-cyan-400">Home</a></li>
+              <li><a href="#home" className="hover:text-[#67e8f9] transition">Home</a></li>
 
-              <li><a href="#about" className="hover:text-cyan-400">About</a></li>
+              <li><a href="#about" className="hover:text-[#67e8f9] transition">About</a></li>
 
-              <li><a href="#stays" className="hover:text-cyan-400">Destinations</a></li>
+              <li><a href="#stays" className="hover:text-[#67e8f9] transition">Destinations</a></li>
 
-              <li><a href="#book" className="hover:text-cyan-400">Book Now</a></li>
+              <li><a href="#book" className="hover:text-[#67e8f9] transition">Book Now</a></li>
 
-              <li><a href="#owners" className="hover:text-cyan-400">List Property</a></li>
+              <li><a href="#owners" className="hover:text-[#67e8f9] transition">List Property</a></li>
 
             </ul>
 
@@ -72,7 +72,7 @@ export default function Footer() {
               Popular Destinations
             </h3>
 
-            <ul className="space-y-3">
+            <ul className="space-y-3 text-white/85">
 
               <li>Kanyakumari</li>
 
@@ -100,11 +100,11 @@ export default function Footer() {
               Contact Us
             </h3>
 
-            <div className="space-y-5">
+            <div className="space-y-5 text-white/85">
 
               <div className="flex gap-3">
 
-                <Phone className="text-cyan-400" size={20} />
+                <Phone className="text-[#67e8f9]" size={20} />
 
                 <span>{displayNumber}</span>
 
@@ -112,7 +112,7 @@ export default function Footer() {
 
               <div className="flex gap-3">
 
-                <Mail className="text-cyan-400" size={20} />
+                <Mail className="text-[#67e8f9]" size={20} />
 
                 <span>info@wavesmist.com</span>
 
@@ -120,7 +120,7 @@ export default function Footer() {
 
               <div className="flex gap-3">
 
-                <MapPin className="text-cyan-400" size={80} />
+                <MapPin className="text-[#67e8f9]" size={80} />
 
                 <span>
                   1st Floor, 54C, Eraniel - Thuckala Rd, opposite to Court Complex JRD Complex, Thuckalay, Padmanabhapuram, Tamil Nadu 629175
@@ -131,11 +131,11 @@ export default function Footer() {
               <div className="mt-6 flex gap-4">
 
                 {/* <a href="#">
-                  <Facebook className="hover:text-cyan-400" />
+                  <Facebook className="hover:text-[#67e8f9]" />
                 </a>
 
                 <a href="#">
-                  <Instagram className="hover:text-cyan-400" />
+                  <Instagram className="hover:text-[#67e8f9]" />
                 </a> */}
 
                
@@ -152,9 +152,9 @@ export default function Footer() {
 
       {/* Bottom */}
 
-      <div className="border-t border-white/10">
+      <div className="border-t border-white/20">
 
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-6 py-6 text-sm text-slate-500 md:flex-row">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-6 py-6 text-sm text-white/70 md:flex-row">
 
           <p>
             © {year} Waves & Mist. All Rights Reserved.
@@ -162,7 +162,7 @@ export default function Footer() {
 
           <p>
             Designed & Developed by
-            <span className="ml-2 font-semibold text-cyan-400">
+            <span className="ml-2 font-semibold text-[#67e8f9]">
               Waves & Mist
             </span>
           </p>

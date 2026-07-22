@@ -108,10 +108,11 @@ I would like to book a stay.`}
 
           {/* Mobile Button */}
 
-          <button
-            onClick={() => setMobileOpen(!mobileOpen)}
-            className="lg:hidden text-white"
-          >
+        <button
+  type="button"
+  onClick={() => setMobileOpen(!mobileOpen)}
+  className="block lg:hidden text-white z-[999]"
+>
             {mobileOpen ? (
               <X size={32} />
             ) : (

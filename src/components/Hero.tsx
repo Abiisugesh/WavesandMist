@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import WhatsAppButton from "./WhatsAppButton";
 import WaveDivider from "./WaveDivider";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -48,20 +49,31 @@ export default function Hero() {
 
     
 
-        <motion.h1
-          initial={{ opacity: 0, y: 60 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          className="mt-8 font-display text-5xl font-bold leading-tight text-white md:text-7xl xl:text-8xl"
-        >
-          Explore The
-          <br />
+        {/* Brand Tagline */}
 
-          <span className="bg-gradient-to-r from-cyan-300 via-white to-green-300 bg-clip-text text-transparent">
-            Beauty of South India
-          </span>
-        </motion.h1>
 
+{/* Main Heading */}
+<motion.h1
+  initial={{ opacity: 0, y: 60 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.2, duration: 1 }}
+  className="mt-25 font-display text-5xl font-bold leading-tight text-white md:text-7xl xl:text-8xl"
+>
+  Explore the
+  <br />
+
+  <span className="bg-gradient-to-r from-cyan-300 via-white to-green-300 bg-clip-text text-transparent">
+    Beauty of South India
+  </span>
+</motion.h1>
+<motion.p
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+  className="mt-8 text-sm font-semibold uppercase tracking-[0.45em] text-cyan-300 md:text-base"
+>
+  Think India. Think Waves & Mist.
+</motion.p>
         <motion.p
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -81,16 +93,13 @@ export default function Hero() {
           transition={{ delay: .5, duration: .8 }}
           className="mt-12 flex flex-wrap justify-center gap-5"
         >
-          <a
-            href="#stays"
-            className="rounded-full bg-cyan-500 px-8 py-4 font-semibold text-white transition duration-300 hover:scale-105 hover:bg-cyan-600"
-          >
-            Explore Destinations
-          </a>
+       <Link
+  href="/transition"
+  className="rounded-full bg-cyan-500 px-8 py-4 font-semibold text-white transition duration-300 hover:scale-105 hover:bg-cyan-600"
+>
+🏖️ Explore Your 7-Day Journey</Link>
 
-          <WhatsAppButton message="Hi Waves & Mist! I would like to plan my trip.">
-            Plan My Trip
-          </WhatsAppButton>
+          
         </motion.div>
 
         <motion.div

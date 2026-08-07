@@ -82,29 +82,19 @@ export default function Navbar() {
 
           {/* Desktop Buttons */}
 
-          <div className="hidden lg:flex items-center gap-4">
+          {/* Desktop Button */}
 
-            <WhatsAppButton
-              message={`Hello Waves & Mist,
+<div className="hidden lg:flex items-center">
 
-I would like to list my property.
+  <a
+    href="/pdf/wavesmist.pdf"
+    download="/pdf/wavesmist.pdf"
+    rel="noopener noreferrer"
+    className="rounded-full bg-cyan-500 px-6 py-3 text-sm font-semibold text-white transition hover:bg-cyan-600"
+  >
+Resort Lookbook ⭐  </a>
 
-Please share the details.`}
-              className="!bg-white !text-slate-900 hover:!bg-cyan-400 hover:!text-white"
-            >
-              List Property
-            </WhatsAppButton>
-
-            <WhatsAppButton
-              message={`Hello Waves & Mist,
-
-I would like to book a stay.`}
-              className="!bg-cyan-500 hover:!bg-cyan-600 !text-white"
-            >
-              Book Now
-            </WhatsAppButton>
-
-          </div>
+</div>
 
           {/* Mobile Button */}
 
@@ -144,31 +134,18 @@ I would like to book a stay.`}
             </a>
           ))}
 
-          <div className="space-y-4 pt-4">
+        <div className="pt-4">
 
-            <WhatsAppButton
-              message={`Hello Waves & Mist,
+  <a
+    href="/pdf/waves-mist-brochure.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex w-full items-center justify-center rounded-full bg-cyan-500 px-6 py-3 font-semibold text-white transition hover:bg-cyan-600"
+  >
+    View Brochure
+  </a>
 
-I would like to book a stay.
-
-Please share available properties.`}
-              className="w-full justify-center !bg-cyan-500 hover:!bg-cyan-600 !text-white"
-            >
-              Book Your Stay
-            </WhatsAppButton>
-
-            <WhatsAppButton
-              message={`Hello Waves & Mist,
-
-I would like to list my property.
-
-Please share the listing process.`}
-              className="w-full justify-center !bg-green-600 hover:!bg-green-700 !text-white"
-            >
-              List Your Property
-            </WhatsAppButton>
-
-          </div>
+</div>
 
         </div>
       </div>

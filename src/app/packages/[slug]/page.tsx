@@ -65,7 +65,7 @@ export default function PackagePage() {
   if (!packageData) return notFound();
 
   const GOOGLE_FORM =
-    "https://docs.google.com/forms/d/e/1FAIpQLSc68NYoH_QRn9HGc3DDjtCozqvQZQ1PIcM3oPfUAX4zmwZghA/viewform?embedded=true";
+    "https://docs.google.com/forms/d/e/1FAIpQLSezDIKReXgiNt5N3q-xE10OvRVDlvAGHWWP8vm9S0sJvdKJLQ/viewform?usp=publish-editor";
 
   return (
     <main className={`${inter.variable} bg-white font-[family-name:var(--font-body)]`}>

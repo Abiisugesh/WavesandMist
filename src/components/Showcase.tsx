@@ -61,32 +61,36 @@ export default function Showcase() {
               </p>
                <div className="mt-6 flex items-center justify-between">
       <div>
-        <p className="text-lg  text-black bg-orange-200 p-2 rounded-full">
-          <span className="font-bold "> 👤 Per Person:</span> <span>₹1000</span>
-        </p>
+        <p className="text-sm sm:text-lg text-black bg-orange-200 px-3 py-2 rounded-full whitespace-nowrap">
+  <span className="font-bold">👤 Per Person:</span>{" "}
+  <span>₹1000</span>
+</p>
 
        
       </div>
 
-      <a
-        href="/mahendragiri?place=mahendragiri"
-        className="
-          rounded-full
-          border-2 border-wave-deep
-          px-6 py-2.5
-          text-sm font-medium
-          text-wave-deep
-          transition-all duration-300
-          hover:bg-wave-deep
-          hover:text-white
-          hover:shadow-lg
-          hover:scale-105
-          text-white
-          bg-gradient-to-r from-cyan-500 to-emerald-500 py-3 font-semibold
-        "
-      >
-        Explore Package →
-      </a>
+     <a
+  href="/mahendragiri?place=mahendragiri"
+  className="
+    rounded-full
+    border-2 border-wave-deep
+    px-6 py-2.5
+    text-xs sm:text-sm
+    font-medium
+    text-wave-deep
+    transition-all duration-300
+    hover:bg-wave-deep
+    hover:text-white
+    hover:shadow-lg
+    hover:scale-105
+    text-white
+    bg-gradient-to-r from-cyan-500 to-emerald-500
+    py-3
+    font-semibold
+  "
+>
+  Explore Package  →
+</a>
     </div>
             </div>
           </div>
@@ -95,7 +99,7 @@ export default function Showcase() {
           <div className="group overflow-hidden rounded-2xl bg-white shadow-sm">
   <div className="relative h-96 overflow-hidden">
     <img
-      src="/images/sea1.png"
+      src="/images/eco2.png"
       alt="Mahendragiri"
       className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
     />
@@ -103,42 +107,46 @@ export default function Showcase() {
 
   <div className="p-6">
     <h3 className="font-display text-2xl text-black">
-      Lemur Beach
+      Eco Resort
     </h3>
 
     <p className="mt-2 text-base text-gray-500">
-      Ganapathipuram, Kannyakumari
+      Santhapuram, Nagercoil
     </p>
 
     {/* Price + Explore */}
     <div className="mt-6 flex items-center justify-between">
       <div>
-        <p className="text-lg  text-black bg-orange-200 p-2 rounded-full">
-          <span className="font-bold "> 👤 Per Person:</span> <span>₹1000</span>
-        </p>
+         <p className="text-sm sm:text-lg text-black bg-orange-200 px-3 py-2 rounded-full whitespace-nowrap">
+  <span className="font-bold">👤 Per Person:</span>{" "}
+  <span>₹1000</span>
+</p>
 
        
       </div>
 
-      <a
-        href="mahendragiri?place=lemur-beach"
-        className="
-          rounded-full
-          border-2 border-wave-deep
-          px-6 py-2.5
-          text-sm font-medium
-          text-wave-deep
-          transition-all duration-300
-          hover:bg-wave-deep
-          hover:text-white
-          hover:shadow-lg
-          hover:scale-105
-          text-white
-          bg-gradient-to-r from-cyan-500 to-emerald-500 py-3 font-semibold
-        "
-      >
-        Explore Package →
-      </a>
+     <a 
+  href="/mahendragiri?place=eco-resort"
+ className="
+    rounded-full
+    border-2 border-wave-deep
+    px-6 py-2.5
+    text-xs sm:text-sm
+    font-medium
+    text-wave-deep
+    transition-all duration-300
+    hover:bg-wave-deep
+    hover:text-white
+    hover:shadow-lg
+    hover:scale-105
+    text-white
+    bg-gradient-to-r from-cyan-500 to-emerald-500
+    py-3
+    font-semibold
+  "
+>
+  Explore Package →
+</a>
     </div>
   </div>
 </div>

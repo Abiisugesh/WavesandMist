@@ -11,34 +11,34 @@ function MahendragiriContent() {
 
   const place = searchParams.get("place") || "mahendragiri";
 
-  const isLemurBeach = place === "lemur-beach";
+  const isEcoResort = place === "eco-resort";
 
   // Package details
-  const packageName = isLemurBeach
-    ? "Lemur Beach"
-    : "Mahendragiri";
+  const packageName = isEcoResort
+  ? "Eco Resort"
+  : "Mahendragiri";
 
-  const location = isLemurBeach
-    ? "Ganapathipuram, Kanyakumari"
+  const location = isEcoResort
+    ? "Santhapuram, Nagercoil"
     : "Tirunelveli, Tamil Nadu";
 
-  const locationShort = isLemurBeach
-    ? "Kanyakumari"
+  const locationShort = isEcoResort
+    ? "Nagercoil"
     : "Tirunelveli";
 
-  const image = isLemurBeach
-    ? "/images/sea1.png"
+  const image = isEcoResort
+    ? "/images/eco2.png"
     : "/images/img7.png";
 
   const price = "₹1000";
-  const images = isLemurBeach
+  const images = isEcoResort
   ? [
-      "/images/sea2.jpg",
-      "/images/sea1.png",
-      "/images/sea3.jpg",
-      "/images/img5.png",
-      "/images/img6.png",
-      "/images/img7.png",
+      "/images/eco1.png",
+      "/images/eco2.png",
+      "/images/eco10.png",
+      "/images/eco11.png",
+      "/images/eco5.png",
+      "/images/eco9.png",
     ]
   : [
       "/images/img9.png",
@@ -115,11 +115,11 @@ function MahendragiriContent() {
             {/* =================================================
                 DESCRIPTION
             ================================================= */}
-            {isLemurBeach ? (
+            {isEcoResort ? (
               <>
                 <p className="mt-6 text-black leading-8 text-black">
                   Experience the beautiful coastal atmosphere of
-                  Lemur Beach in Ganapathipuram, Kanyakumari.
+                  Eco Resort in Santhapuram, Nagercoil.
                   Enjoy the golden sands, beautiful ocean views
                   and peaceful surroundings.
                 </p>
@@ -161,165 +161,76 @@ function MahendragiriContent() {
               </h3>
 
 
-              <div className="mt-6 grid gap-5 sm:grid-cols-2 ">
+              <div className="mt-6 grid gap-5 sm:grid-cols-2">
 
-                {isLemurBeach ? (
-                  <>
-                    {/* Beach Experience */}
-                    <div className="rounded-2xl bg-white p-6 shadow-sm border border-black">
+  {/* Eco-Friendly Stay */}
+  <div className="rounded-2xl bg-white p-6 shadow-sm border border-black">
+    <div className="text-2xl">
+      🌿
+    </div>
 
-                      <div className="text-2xl">
-                        🏖️
-                      </div>
+    <h4 className="mt-4 font-semibold text-black">
+      Eco-Friendly Stay
+    </h4>
 
-                      <h4 className="mt-4 font-semibold text-black">
-                        Beach Experience
-                      </h4>
-
-                      <p className="mt-2 text-sm leading-6 text-gray-500">
-                        Relax on the beautiful golden sands of
-                        Lemur Beach.
-                      </p>
-
-                    </div>
+    <p className="mt-2 text-sm leading-6 text-gray-500">
+      Stay in a peaceful eco-friendly resort surrounded by
+      natural beauty and sustainable surroundings.
+    </p>
+  </div>
 
 
-                    {/* Ocean Views */}
-                    <div className="rounded-2xl bg-white p-6 shadow-sm border border-black">
+  {/* Nature & Greenery */}
+  <div className="rounded-2xl bg-white p-6 shadow-sm border border-black">
+    <div className="text-2xl">
+      🌴
+    </div>
 
-                      <div className="text-2xl">
-                        🌊
-                      </div>
+    <h4 className="mt-4 font-semibold text-black">
+      Nature & Greenery
+    </h4>
 
-                      <h4 className="mt-4 font-semibold text-black">
-                        Ocean Views
-                      </h4>
-
-                      <p className="mt-2 text-sm leading-6 text-gray-500">
-                        Enjoy beautiful ocean views and a
-                        peaceful coastal atmosphere.
-                      </p>
-
-                    </div>
+    <p className="mt-2 text-sm leading-6 text-gray-500">
+      Enjoy lush greenery, fresh air, and a relaxing atmosphere
+      close to nature.
+    </p>
+  </div>
 
 
-                    {/* Tropical Nature */}
-                    <div className="rounded-2xl bg-white p-6 shadow-sm border border-black">
+  {/* Sustainable Experience */}
+  <div className="rounded-2xl bg-white p-6 shadow-sm border border-black">
+    <div className="text-2xl">
+      ♻️
+    </div>
 
-                      <div className="text-2xl">
-                        🌴
-                      </div>
+    <h4 className="mt-4 font-semibold text-black">
+      Sustainable Experience
+    </h4>
 
-                      <h4 className="mt-4 font-semibold text-black">
-                        Tropical Nature
-                      </h4>
-
-                      <p className="mt-2 text-sm leading-6 text-gray-500">
-                        Explore the coconut palms and greenery
-                        surrounding the beach.
-                      </p>
-
-                    </div>
+    <p className="mt-2 text-sm leading-6 text-gray-500">
+      Experience responsible tourism with eco-conscious
+      practices designed to protect the environment.
+    </p>
+  </div>
 
 
-                    {/* Scenic Moments */}
-                    <div className="rounded-2xl bg-white p-6 shadow-sm border border-black">
+  {/* Peaceful Escape */}
+  <div className="rounded-2xl bg-white p-6 shadow-sm border border-black">
+    <div className="text-2xl">
+      🏡
+    </div>
 
-                      <div className="text-2xl">
-                        📸
-                      </div>
+    <h4 className="mt-4 font-semibold text-black">
+      Peaceful Escape
+    </h4>
 
-                      <h4 className="mt-4 font-semibold text-black">
-                        Scenic Moments
-                      </h4>
+    <p className="mt-2 text-sm leading-6 text-gray-500">
+      Relax away from the busy city and reconnect with nature
+      in a calm and refreshing environment.
+    </p>
+  </div>
 
-                      <p className="mt-2 text-sm leading-6 text-gray-500">
-                        Capture beautiful beach views and
-                        memorable travel moments.
-                      </p>
-
-                    </div>
-                  </>
-                ) : (
-                  <>
-                    {/* Mountain Views */}
-                    <div className="rounded-2xl bg-white p-6 shadow-sm border border-black">
-
-                      <div className="text-2xl">
-                        🏔️
-                      </div>
-
-                      <h4 className="mt-4 font-semibold text-black">
-                        Mountain Views
-                      </h4>
-
-                      <p className="mt-2 text-sm leading-6 text-gray-500">
-                        Enjoy beautiful mountain views and
-                        peaceful natural surroundings.
-                      </p>
-
-                    </div>
-
-
-                    {/* Nature Experience */}
-                    <div className="rounded-2xl bg-white p-6 shadow-sm border border-black">
-
-                      <div className="text-2xl">
-                        🌿
-                      </div>
-
-                      <h4 className="mt-4 font-semibold text-black">
-                        Nature Experience
-                      </h4>
-
-                      <p className="mt-2 text-sm leading-6 text-gray-500">
-                        Explore the greenery and natural beauty
-                        around Mahendragiri.
-                      </p>
-
-                    </div>
-
-
-                    {/* Adventure */}
-                    <div className="rounded-2xl bg-white p-6 shadow-sm border border-black">
-
-                      <div className="text-2xl">
-                        🥾
-                      </div>
-
-                      <h4 className="mt-4 font-semibold text-black">
-                        Adventure
-                      </h4>
-
-                      <p className="mt-2 text-sm leading-6 text-gray-500">
-                        Experience scenic trails and outdoor
-                        activities.
-                      </p>
-
-                    </div>
-
-
-                    {/* Scenic Moments */}
-                    <div className="rounded-2xl bg-white p-6 shadow-sm border border-black">
-
-                      <div className="text-2xl">
-                        📸
-                      </div>
-
-                      <h4 className="mt-4 font-semibold text-black">
-                        Scenic Moments
-                      </h4>
-
-                      <p className="mt-2 text-sm leading-6 text-gray-500">
-                        Capture beautiful landscapes and
-                        memorable moments.
-                      </p>
-
-                    </div>
-                  </>
-                )}
-
-              </div>
+</div>
 
             </div>
 
@@ -334,7 +245,7 @@ function MahendragiriContent() {
               </h3>
 
 
-              {isLemurBeach ? (
+              {isEcoResort ? (
                 <ul className="mt-6 space-y-4 text-gray-600">
                   <li>✓ Beach visit</li>
                   <li>✓ Local transportation</li>

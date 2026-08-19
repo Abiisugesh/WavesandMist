@@ -2,9 +2,9 @@
 
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import { useState } from "react";
+import { Suspense, useState } from "react";
 
-export default function MahendragiriPage() {
+function MahendragiriContent() {
   const searchParams = useSearchParams();
 
   const [showForm, setShowForm] = useState(false);
@@ -861,5 +861,12 @@ export default function MahendragiriPage() {
 
 
 </main>
+  );
+}
+export default function MahendragiriPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <MahendragiriContent />
+    </Suspense>
   );
 }

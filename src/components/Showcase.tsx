@@ -107,7 +107,7 @@ export default function Showcase() {
 
   <div className="p-6">
     <h3 className="font-display text-2xl text-black">
-      Form Stay
+      Farm Stay
     </h3>
 
     <p className="mt-2 text-base text-gray-500">

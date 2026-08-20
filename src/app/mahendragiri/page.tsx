@@ -15,7 +15,7 @@ function MahendragiriContent() {
 
   // Package details
   const packageName = isEcoResort
-  ? "Form Stay"
+  ? "Farm Stay"
   : "Mahendragiri";
 
   const location = isEcoResort
@@ -132,7 +132,7 @@ function MahendragiriContent() {
               <>
                 <p className="mt-6 text-black leading-8 text-black">
                   Experience the beautiful coastal atmosphere of
-                  Eco Resort in Santhapuram, Nagercoil.
+                  Farm Stay in Santhapuram, Nagercoil.
                   Enjoy the golden sands, beautiful ocean views
                   and peaceful surroundings.
                 </p>

@@ -15,7 +15,7 @@ function MahendragiriContent() {
 
   // Package details
   const packageName = isEcoResort
-  ? "Eco Resort"
+  ? "Form Stay"
   : "Mahendragiri";
 
   const location = isEcoResort
@@ -23,14 +23,27 @@ function MahendragiriContent() {
     : "Tirunelveli, Tamil Nadu";
 
   const locationShort = isEcoResort
-    ? "Nagercoil"
+    ? "Santhapuram,Nagercoil"
     : "Tirunelveli";
 
   const image = isEcoResort
     ? "/images/eco2.png"
     : "/images/img7.png";
 
-  const price = "₹1000";
+  const price = isEcoResort
+  ? "₹1,000"
+  : "₹1,000"
+   const food=isEcoResort
+   ? "Extra Charges"
+   : "Included"
+  const duration=isEcoResort
+  ? "1 Day / 1 Night - ₹1,000"
+  : "1 Day / 1 Night - ₹2,000"
+
+  const durations=isEcoResort
+  ? " -"
+  : "1 Day - ₹1,000"
+  
   const images = isEcoResort
   ? [
       "/images/eco1.png",
@@ -293,6 +306,9 @@ function MahendragiriContent() {
                 </span>
 
               </div>
+              
+              
+              
 
 
               {/* Divider */}
@@ -301,35 +317,6 @@ function MahendragiriContent() {
 
               {/* Package Information */}
               <div className="space-y-5">
-
-                {/* Location */}
-                <div className="flex items-center justify-between gap-4">
-
-                  <span className="text-gray-500">
-                    📍 Location
-                  </span>
-
-                  <span className="text-right font-semibold text-black">
-                    {locationShort}
-                  </span>
-
-                </div>
-
-
-                {/* Guests */}
-                <div className="flex items-center justify-between">
-
-                  <span className="text-gray-500">
-                    👤 Guests
-                  </span>
-
-                  <span className="font-semibold text-black">
-                    Per Person
-                  </span>
-
-                </div>
-
-
                 {/* Destination */}
                 <div className="flex items-center justify-between gap-4">
 
@@ -342,6 +329,73 @@ function MahendragiriContent() {
                   </span>
 
                 </div>
+
+                {/* Location */}
+                {/* <div className="flex items-center justify-between gap-4">
+
+                  <span className="text-gray-500">
+                    📍 Location
+                  </span>
+
+                  <span className="text-right font-semibold text-black">
+                    {locationShort}
+                  </span>
+
+                </div> */}
+                <div className="flex items-center justify-between gap-4">
+
+                  <span className="text-gray-500">
+                   🌴 Durations
+                  </span>
+
+                  <span className="text-right font-semibold text-black">
+                    {duration}
+                  </span>
+
+                </div>
+                <div className="flex items-center justify-between gap-4">
+
+                  <span className="text-gray-500">
+                    
+                  </span>
+
+                  <span className="text-right font-semibold text-black">
+                    {durations}
+                  </span>
+
+                </div>
+                <div className="flex items-center justify-between gap-4">
+
+                  <span className="text-gray-500">
+                    👤  Per Person
+                  </span>
+
+                  <span className="text-right font-semibold text-black">
+                    {price}
+                  </span>
+
+                </div>
+                <div className="flex item center justify-between">
+                  <span className="text-gray-500"> 🍴 Food</span>
+                  <span className="text-black font-semibold text-right">{food}</span>
+                </div>
+
+
+                {/* Guests */}
+                {/* <div className="flex items-center justify-between">
+
+                  <span className="text-gray-500">
+                    👤 Guests
+                  </span>
+
+                  <span className="font-semibold text-black">
+                    Per Person
+                  </span>
+
+                </div> */}
+
+
+                
 
               </div>
 

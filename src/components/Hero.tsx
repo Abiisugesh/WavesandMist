@@ -94,10 +94,10 @@ export default function Hero() {
           className="mt-12 flex flex-wrap justify-center gap-5"
         >
        <Link
-  href="/transition"
+  href="/showcase"
   className="rounded-full bg-cyan-500 px-8 py-4 font-semibold text-white transition duration-300 hover:scale-105 hover:bg-cyan-600"
 >
-🏖️ Explore Your 7-Day Journey</Link>
+🏖️ Explore Your Stays ⭐</Link>
 
           
         </motion.div>

@@ -17,42 +17,42 @@ export default function Showcase() {
 
         {/* Heading */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.4 }}
-          transition={{ duration: 0.7 }}
-          className="max-w-2xl mb-14"
-        >
-          <p className="text-xs tracked uppercase text-sage-deep mb-4">
-            Resorts &amp; homestays
-          </p>
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true, amount: 0.4 }}
+  transition={{ duration: 0.7 }}
+  className="mx-auto max-w-4xl mb-14 text-center"
+>
+  <p className="text-base md:text-lg tracked uppercase text-sage-deep mb-4">
+    Resorts &amp; homestays
+  </p>
 
-          <h2 className="font-display text-3xl md:text-4xl tracked-tight text-wave-deep">
-            The collection
-          </h2>
+  <h2 className="font-display text-4xl md:text-6xl tracked-tight text-wave-deep">
+    The collection
+  </h2>
 
-          <p className="mt-4 text-slate-soft leading-relaxed">
-            Six places to stay, no two alike — from canopy-level resort
-            villas to a single spare room in a fishing family&apos;s home.
-            Every listing books directly on WhatsApp.
-          </p>
-        </motion.div>
+  <p className="mt-6 text-lg md:text-xl text-slate-soft leading-relaxed">
+    Six places to stay, no two alike — from canopy-level resort
+    villas to a single spare room in a fishing family&apos;s home.
+    Every listing books directly on WhatsApp.
+  </p>
+</motion.div>
 
         {/* TWO LARGE CARDS */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
 
           {/* Card 1 */}
           <div className="group overflow-hidden rounded-2xl bg-white shadow-sm">
-            <div className="relative h-96 overflow-hidden">
+            <div className="relative h-112 overflow-hidden">
               <img
-                src="/images/img3.png"
+                src="/images/mahaa.png"
                 alt="Canopy Villa"
                 className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
 
             <div className="p-6">
-              <h3 className="font-display text-2xl text-black">
+              <h3 className="font-display text-2xl text-black font-bold">
                   Mahendragiri
               </h3>
 
@@ -97,7 +97,7 @@ export default function Showcase() {
 
           {/* Card 2 */}
           <div className="group overflow-hidden rounded-2xl bg-white shadow-sm">
-  <div className="relative h-96 overflow-hidden">
+  <div className="relative h-112 overflow-hidden">
     <img
       src="/images/eco2.png"
       alt="Mahendragiri"
@@ -106,7 +106,7 @@ export default function Showcase() {
   </div>
 
   <div className="p-6">
-    <h3 className="font-display text-2xl text-black">
+    <h3 className="font-display text-2xl text-black font-bold">
       Farm Stay
     </h3>
 

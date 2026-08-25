@@ -28,7 +28,7 @@ function MahendragiriContent() {
 
   const image = isEcoResort
     ? "/images/eco2.png"
-    : "/images/img7.png";
+    : "/images/mahaa.png";
 
   const price = isEcoResort
   ? "₹1,000"
@@ -68,37 +68,37 @@ function MahendragiriContent() {
       {/* =========================================================
           HERO
       ========================================================= */}
-      <section className="relative h-[65vh] min-h-[500px] overflow-hidden">
+      <section className="relative h-[85vh] min-h-[600px] overflow-hidden md:h-[75vh] md:min-h-[500px]">
 
-        <img
-          src={image}
-          alt={packageName}
-          className="h-full w-full object-cover"
-        />
+  <img 
+    src={image} 
+    alt={packageName} 
+    className="h-full w-full object-cover object-top" 
+  />
 
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-black/40" />
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-black/40" />
 
-        {/* Hero Content */}
-        <div className="absolute inset-0 flex items-end">
-          <div className="w-full px-6 pb-14 md:px-12 lg:px-20">
+  {/* Hero Content */}
+  <div className="absolute inset-0 flex items-end">
+    <div className="w-full px-6 pb-14 md:px-12 lg:px-20">
 
-            <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-white/80">
-              Travel Package
-            </p>
+      <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-white/80">
+        Travel Package
+      </p>
 
-            <h1 className="font-display text-5xl font-bold text-white md:text-7xl">
-              {packageName}
-            </h1>
+      <h1 className="font-display text-5xl font-bold text-white md:text-7xl">
+        {packageName}
+      </h1>
 
-            <p className="mt-4 text-lg text-white md:text-xl">
-              📍 {location}
-            </p>
+      <p className="mt-4 text-lg text-white md:text-xl">
+        📍 {location}
+      </p>
 
-          </div>
-        </div>
+    </div>
+  </div>
 
-      </section>
+</section>
 
 
       {/* =========================================================

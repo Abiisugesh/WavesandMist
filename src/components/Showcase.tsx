@@ -14,160 +14,151 @@ export default function Showcase() {
       className="relative bg-fog-deep/40 py-24 md:py-32"
     >
       <div className="mx-auto w-full px-4 md:px-6">
-
         {/* Heading */}
         <motion.div
-  initial={{ opacity: 0, y: 20 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  viewport={{ once: true, amount: 0.4 }}
-  transition={{ duration: 0.7 }}
-  className="mx-auto max-w-4xl mb-14 text-center"
->
-  <p className="text-base md:text-lg tracked uppercase text-sage-deep mb-4">
-    Resorts &amp; homestays
-  </p>
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.4 }}
+          transition={{ duration: 0.7 }}
+          className="mx-auto mb-14 max-w-4xl text-center"
+        >
+          <p className="tracked mb-4 text-base uppercase text-sage-deep md:text-lg">
+            Resorts &amp; homestays
+          </p>
 
-  <h2 className="font-display text-4xl md:text-6xl tracked-tight text-wave-deep">
-    The collection
-  </h2>
+          <h2 className="font-display tracked-tight text-4xl text-wave-deep md:text-6xl">
+            The collection
+          </h2>
 
-  <p className="mt-6 text-lg md:text-xl text-slate-soft leading-relaxed">
-    Six places to stay, no two alike — from canopy-level resort
-    villas to a single spare room in a fishing family&apos;s home.
-    Every listing books directly on WhatsApp.
-  </p>
-</motion.div>
+          <p className="mt-6 text-lg leading-relaxed text-slate-soft md:text-xl">
+            Discover unique places to stay, from peaceful resort villas
+            to comfortable homestays. Every listing books directly on WhatsApp.
+          </p>
+        </motion.div>
 
-        {/* TWO LARGE CARDS */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+        {/* THREE LARGE CARDS */}
+        <div className="mb-10 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
 
-          {/* Card 1 */}
+          {/* Card 1: Mahendragiri */}
           <div className="group overflow-hidden rounded-2xl bg-white shadow-sm">
-            <div className="relative h-112 overflow-hidden">
+            <div className="relative h-80 overflow-hidden md:h-96">
               <img
                 src="/images/mahaa.png"
-                alt="Canopy Villa"
+                alt="Mahendragiri"
                 className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
 
             <div className="p-6">
-              <h3 className="font-display text-2xl text-black font-bold">
-                  Mahendragiri
+              <h3 className="font-display text-2xl font-bold text-black">
+                Mahendragiri
               </h3>
 
               <p className="mt-2 text-base text-gray-500">
                 Tirunelveli, Tamil Nadu
               </p>
-               <div className="mt-6 flex items-center justify-between">
-      <div>
-        <p className="text-sm sm:text-lg text-black bg-orange-200 px-3 py-2 rounded-full whitespace-nowrap">
-  <span className="font-bold">👤 Per Person:</span>{" "}
-  <span>₹1000</span>
-</p>
 
-       
-      </div>
+              <div className="mt-6 flex flex-wrap items-center justify-between gap-4">
+                <p className="whitespace-nowrap rounded-full bg-orange-200 px-3 py-2 text-sm text-black sm:text-base">
+                  <span className="font-bold">👤 Per Person:</span>{" "}
+                  <span>₹1,000</span>
+                </p>
 
-     <a
-  href="/mahendragiri?place=mahendragiri"
-  className="
-    rounded-full
-    border-2 border-wave-deep
-    px-6 py-2.5
-    text-xs sm:text-sm
-    font-medium
-    text-wave-deep
-    transition-all duration-300
-    hover:bg-wave-deep
-    hover:text-white
-    hover:shadow-lg
-    hover:scale-105
-    text-white
-    bg-gradient-to-r from-cyan-500 to-emerald-500
-    py-3
-    font-semibold
-  "
->
-  Explore Package  →
-</a>
-    </div>
+                <a
+                  href="/mahendragiri?place=mahendragiri"
+                  className="rounded-full bg-gradient-to-r from-cyan-500 to-emerald-500 px-5 py-3 text-sm font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-lg"
+                >
+                  Explore Package →
+                </a>
+              </div>
             </div>
           </div>
 
-          {/* Card 2 */}
+          {/* Card 2: Farm Stay */}
           <div className="group overflow-hidden rounded-2xl bg-white shadow-sm">
-  <div className="relative h-112 overflow-hidden">
-    <img
-      src="/images/eco2.png"
-      alt="Mahendragiri"
-      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-    />
-  </div>
+            <div className="relative h-80 overflow-hidden md:h-96">
+              <img
+                src="/images/eco2.png"
+                alt="Farm Stay"
+                className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
 
-  <div className="p-6">
-    <h3 className="font-display text-2xl text-black font-bold">
-      Farm Stay
-    </h3>
+            <div className="p-6">
+              <h3 className="font-display text-2xl font-bold text-black">
+                Farm Stay
+              </h3>
 
-    <p className="mt-2 text-base text-gray-500">
-      Santhapuram, Nagercoil
-    </p>
+              <p className="mt-2 text-base text-gray-500">
+                Santhapuram, Nagercoil
+              </p>
 
-    {/* Price + Explore */}
-    <div className="mt-6 flex items-center justify-between">
-      <div>
-         <p className="text-sm sm:text-lg text-black bg-orange-200 px-3 py-2 rounded-full whitespace-nowrap">
-  <span className="font-bold">👤 Per Person:</span>{" "}
-  <span>₹1000</span>
-</p>
+              <div className="mt-6 flex flex-wrap items-center justify-between gap-4">
+                <p className="whitespace-nowrap rounded-full bg-orange-200 px-3 py-2 text-sm text-black sm:text-base">
+                  <span className="font-bold">👤 Per Person:</span>{" "}
+                  <span>₹1,000</span>
+                </p>
 
-       
-      </div>
+                <a
+                  href="/mahendragiri?place=eco-resort"
+                  className="rounded-full bg-gradient-to-r from-cyan-500 to-emerald-500 px-5 py-3 text-sm font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-lg"
+                >
+                  Explore Package →
+                </a>
+              </div>
+            </div>
+          </div>
 
-     <a 
-  href="/mahendragiri?place=eco-resort"
- className="
-    rounded-full
-    border-2 border-wave-deep
-    px-6 py-2.5
-    text-xs sm:text-sm
-    font-medium
-    text-wave-deep
-    transition-all duration-300
-    hover:bg-wave-deep
-    hover:text-white
-    hover:shadow-lg
-    hover:scale-105
-    text-white
-    bg-gradient-to-r from-cyan-500 to-emerald-500
-    py-3
-    font-semibold
-  "
->
-  Explore Package →
-</a>
-    </div>
-  </div>
-</div>
+          {/* Card 3: Nova Nest */}
+          <div className="group overflow-hidden rounded-2xl bg-white shadow-sm">
+            <div className="relative h-80 overflow-hidden md:h-96">
+              <img
+                src="/images/nova 6.jpg"
+                alt="Nova Nest"
+                onError={(e) => {
+                  e.currentTarget.style.display = "none";
+                }}
+                className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 -z-10 flex items-center justify-center bg-slate-100">
+                <span className="text-lg font-semibold text-slate-500">
+                  Nova Nest
+                </span>
+              </div>
+            </div>
+
+            <div className="p-6">
+              <h3 className="font-display text-2xl font-bold text-black">
+                Nova Nest
+              </h3>
+
+              <p className="mt-2 text-base text-gray-500">
+                Nova Nest
+              </p>
+
+              <div className="mt-6 flex flex-wrap items-center justify-between gap-4">
+                <p className="whitespace-nowrap rounded-full bg-orange-200 px-3 py-2 text-sm text-black sm:text-base">
+                  <span className="font-bold">👤 Per Person:</span>{" "}
+                  <span>₹1,200 / night</span>
+                </p>
+
+                <a
+                  href="/mahendragiri?place=nova-nest"
+                  className="rounded-full bg-gradient-to-r from-cyan-500 to-emerald-500 px-5 py-3 text-sm font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-lg"
+                >
+                  Explore Package →
+                </a>
+              </div>
+            </div>
+          </div>
 
         </div>
 
         {/* EXPLORE BUTTON */}
-        <div className="flex justify-end mb-12">
+        <div className="mb-12 flex justify-end">
           <button
             onClick={() => setShowProperties(!showProperties)}
-            className="rounded-full
-      border-2 border-wave-deep
-      px-8 py-3
-      text-sm font-medium
-      text-wave-deep
-      bg-transparent
-      transition-all duration-300
-      hover:bg-wave-deep
-      hover:text-white
-      hover:shadow-lg
-      hover:scale-105"
+            className="rounded-full border-2 border-wave-deep bg-transparent px-8 py-3 text-sm font-medium text-wave-deep transition-all duration-300 hover:scale-105 hover:bg-wave-deep hover:text-white hover:shadow-lg"
           >
             {showProperties ? "Hide Properties" : "Explore"}
           </button>
@@ -179,7 +170,7 @@ export default function Showcase() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
+            className="grid gap-6 sm:grid-cols-2 md:gap-8 lg:grid-cols-3"
           >
             {PROPERTIES.map((property, index) => (
               <PropertyCard
@@ -190,7 +181,6 @@ export default function Showcase() {
             ))}
           </motion.div>
         )}
-
       </div>
     </section>
   );

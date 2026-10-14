@@ -28,14 +28,14 @@ function MahendragiriContent() {
   const location = isEcoResort
     ? "Santhapuram, Nagercoil"
     : isNovaNest
-    ? "Nova Nest"
-    : "Tirunelveli, Tamil Nadu";
+    ? "Nagercoil, Tamil Nadu"
+    : "Kanyakumari, Tamil Nadu";
 
   const locationShort = isEcoResort
     ? "Santhapuram, Nagercoil"
     : isNovaNest
-    ? "Nova Nest"
-    : "Tirunelveli";
+    ? "Nagercoil, Tamil Nadu"
+    : "Kanyakumari, Tamil Nadu";
 
   const image = isEcoResort
     ? "/images/eco2.png"

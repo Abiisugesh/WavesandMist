@@ -55,7 +55,7 @@ export default function Showcase() {
               </h3>
 
               <p className="mt-2 text-base text-gray-500">
-                Tirunelveli, Tamil Nadu
+                Kanyakumari, Tamil Nadu
               </p>
 
               <div className="mt-6 flex flex-wrap items-center justify-between gap-4">
@@ -133,7 +133,7 @@ export default function Showcase() {
               </h3>
 
               <p className="mt-2 text-base text-gray-500">
-                Nova Nest
+                Nagercoil, Tamil Nadu
               </p>
 
               <div className="mt-6 flex flex-wrap items-center justify-between gap-4">
